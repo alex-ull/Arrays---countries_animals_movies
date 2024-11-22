@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Animals</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">Arrays</a>
+    </header>
+    <main>
+        <div class="options">
+            <label for="sortHabitat">Select Habitat:</label>
+            <select id="sortHabitat" onchange="setHabit()">
+                <option value="">All</option>
+                <option value="Antarctica">Antarctica</option>
+                <option value="Arctic">Arctic</option>
+                <option value="Australia">Australia</option>
+                <option value="Forests">Forests</option>
+                <option value="Grasslands">Grasslands</option>
+                <option value="Mountains">Mountains</option>
+                <option value="Ocean">Ocean</option>
+                <option value="Savannah">Savannah</option>
+            </select>
+            <label for="sortDiet">Diet:</label>
+            <select id="sortDiet" onchange="setDiet()">
+                <option value="">All</option>
+                <option value="Carnivore">Carnivore</option>
+                <option value="Herbivore">Herbivore</option>
+            </select>
+        </div>
+        <div id="content"></div>
+    </main>
+    <script src="animals.js"></script>
+</body>
+</html>

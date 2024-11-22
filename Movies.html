@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Books</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">Arrays</a>
+    </header>
+    <main>
+        <div class="options">
+            <label for="sortgenre">Select genre:</label>
+            <select id="sortgenre" onchange="setGenre()">
+                <option value="">All</option>
+                <option value="Action">Action</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Animation">Animation</option>
+                <option value="Crime">Crime</option>
+                <option value="Drama">Drama</option>
+                <option value="Romance">Romance</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+            </select>
+        </div>
+        <div id="content"></div>
+    </main>
+    <script src="Movies.js"></script>
+</body>
+</html>
